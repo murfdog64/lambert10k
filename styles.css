@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: monospace
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: rgb(44, 44, 44);
+  position: fixed;
+  width: 100%;
+}
+
+.main-img {
+  background-image: url(images/IMG_8066\ 2.jpg);
+  min-height: 445px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-logo {
+  background: rgb(44, 44, 44);
+  height: 3rem;
+
+}
+
+nav {
+  font-family: monospace;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  background: rgb(44, 44, 44);
+}
+
+ul {
+  background: rgb(44, 44, 44);
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: white;
+  background: rgb(44, 44, 44);
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+li a {
+  color: white
+}
+
+li:hover, 
+li a:hover {
+  color: rgb(197, 178, 67);
+  /* background: rgb(71, 71, 71); */
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+ul li ul {
+  background: rgb(44, 44, 44);
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.landing {
+  flex-direction: column;
+  padding: 1vw;
+  height: 50rem;
+  background-color: white;
+}
+
+h1, p {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-img {
+    height: 100%;
+  }
+}
