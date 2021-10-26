@@ -4,6 +4,7 @@
 
 body, html {
   height: 100%;
+  font-size: 18px;
 }
 
 body {
@@ -106,7 +107,7 @@ ul li ul li {
 
 .landing {
   flex-direction: column;
-  padding: 1vw;
+  padding: 3vw;
   height: 50rem;
   background-color: white;
 }
