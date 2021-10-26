@@ -47,7 +47,6 @@ nav {
 ul {
   background: rgb(44, 44, 44);
   list-style-type: none;
-  float: left;
   margin: 0;
   padding-left: 0;
 }
@@ -68,28 +67,32 @@ li a {
 }
 
 li:hover, 
-li a:hover {
+li:focus-within {
   color: rgb(197, 178, 67);
-  /* background: rgb(71, 71, 71); */
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
+li:focus-within a {
+  outline: none;
+}
+
 ul li ul {
   background: rgb(44, 44, 44);
-  display: none;
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
   position: absolute;
   margin-top: 1rem;
   left: 0;
-  display: none;
   transition: all 0.5s ease;
+  display: none;
 }
 
 ul li:hover > ul,
-ul li ul:hover {
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
   visibility: visible;
   opacity: 1;
   display: block;
@@ -116,6 +119,7 @@ h1, p {
 @media only screen and (max-width: 500px) {
   .main-img {
     height: 45%;
-    background-size: cover;
+    background-size: 100vw 34vh;
+    background-position-y: 17vh;
   }
 }
