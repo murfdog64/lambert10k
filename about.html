@@ -3,7 +3,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Mate+SC" rel="stylesheet">
 </head>
 <body>
-  <?php include "./nav.html" ?>
+  <header>
+     <a href="index.html">
+       <img class="header-logo" src="images/10k_text.PNG" alt="Lambert 10k">
+     </a>
+     <nav>
+       <ul>
+         <li><a href="about.html">About</a>
+           <ul>
+             <li><a href="/about.html"></a>Course Info</li>
+             <li><a href="#course-map"></a>Maps</li>
+             <li><a href="#profile"></a>Elevation Profile</li>
+           </ul>
+         </li>
+         <li><a href="runners.html">Runners</a>
+           <ul>
+             <li><a href="#">Entry Process</a>
+             <li><a href="#">Pacers</a>
+           </ul>    
+         </li>
+         <!-- <li><a href="#">Volunteers</a></li> -->
+         <li><a href="#">Lambert</a>
+           <ul>
+             <li><a href="#">Lodging</a>
+             <li><a href="#">Attractions</a>
+           </ul>    
+         </li>
+       </ul>
+     </nav>
+   </header>
   <div class="about-landing">
     <h1>The Race</h1>
 
@@ -11,13 +39,16 @@
 
     <p>Racers will sprint through the majestic preserves that create a priceless oasis amid the mansions of Utah’s finest personal injury attorneys and multi level marketers. Climbing and turning and descending through legendary trails such as, High Bench, Spring, Middle Spring and Spring. There are also other trails for which to run on. </p>
 
-    <h2>Maps</h2>
+    <h2 id="course-maps">Maps</h2>
     <iframe src="https://ayvri.com/embed/7j0weq2dky/ckv8qydxv00013h6cnsph428u" allowfullscreen    height="500" width="700">
     </iframe>
     <br>
-    <iframe src="/images/leaflet.html" frameborder="0" height="500" width="700"></iframe>
-    <h2>Elevation Profile</h2>
+    <img src="images/lambert-map.png"></img>
+    <h2 id="profile">Elevation Profile</h2>
     <img src="images/elv-profile.png" alt="">
   </div>
-  <?php include "./footer.html" ?>
+  <br>
+  <footer>
+    <img class="logo" src="images/logo.PNG" alt="logo">
+  </footer>
 </body>
