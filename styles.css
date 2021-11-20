@@ -23,12 +23,12 @@ header {
 }
 
 .main-img {
-  background-image: url(images/IMG_8066\ 2.jpg);
+  background-image: url(images/main-photo.png);
   min-height: 445px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .header-logo {
@@ -118,6 +118,17 @@ ul li ul li {
   align-items: center;
 }
 
+.sponsors-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8vh;
+}
+
+.sponsor {
+  width: 200px;
+  height: 200px;
+}
+
 h1, p {
   display: flex;
   justify-content: center;
@@ -154,7 +165,17 @@ footer {
 @media only screen and (max-width: 500px) {
   .main-img {
     height: 45%;
-    background-size: 100vw 34vh;
     background-position-y: 16vh;
+  }
+
+  .sponsor {
+    width: 230px;
+    height: 230px;
+    padding-top: .75vh;
+  }
+
+  .sponsors-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
