@@ -23,13 +23,16 @@ header {
   width: 100%;
 }
 
-.main-img {
-  background-image: url(images/main-photo.png);
-  min-height: 445px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.movie-container {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.film {
+  margin-top: -14vh;
+  margin-bottom: -23vh;
+  z-index: -1;
 }
 
 .header-logo {
@@ -108,8 +111,12 @@ ul li ul li {
 .landing {
   display: flex;
   flex-direction: column;
-  padding: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   align-items: center;
+  background-color: rgb(247, 247, 247);
 }
 
 .landing.other {
@@ -119,6 +126,7 @@ ul li ul li {
 .sponsors-container {
   display: flex;
   justify-content: space-around;
+  background-color: rgb(247, 247, 247);
 }
 
 .sponsor {
@@ -126,7 +134,7 @@ ul li ul li {
   height: 200px;
 }
 
-h1, p {
+h1, h2, p {
   display: flex;
   justify-content: center;
   line-height: 23px;
@@ -179,11 +187,12 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .main-img {
-    height: 45%;
-    background-position-y: 13vh;
-    background-size: contain;
-    min-height: 0;
+
+  .film {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -18vh;
+    z-index: -1;
   }
 
   h1, h2 {
